@@ -82,7 +82,6 @@ def game():
                 
                 if forca.descobriuPalavra():
                     send_msg_to_all("+100")
-                    print("\nParabéns, você ganhou!")
                     break
                 
                 if forca.getQntdErros() == 6:
