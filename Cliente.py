@@ -1,7 +1,8 @@
 from socket import *
 
-host = gethostname() # IP do Servidor
-port = 35000 # Porta que o Servidor escuta
+host = input("Digite o IP do Servidor: ")
+port = int(input("Digite a PORTA que o servidor escuta: "))
+
 ip_port = (host, port)
 
 cliente = socket(AF_INET, SOCK_STREAM)

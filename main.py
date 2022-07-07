@@ -11,7 +11,6 @@ podeJogar = False
 quant_jogadores = int(input("Digite a quantidade de jogadores: "))
 jogadores_conectados = 0
 
-
 forca = Forca(input("Digite a palavra a ser encontrada: "), input("Digite a dica da palavra: "))
 
 def send_msg(cliente_socket, msg):
@@ -151,7 +150,7 @@ def changeLetra(cliente_socket):
 def main():
     
     HOST =  '0.0.0.0' # IP do Servidor
-    PORT = 35000 # Porta que o Servidor escuta
+    PORT = int(input("Digite a PORTA que o servidor escuta: "))
 
     sock = socket(AF_INET, SOCK_STREAM)
     sock.bind((HOST, PORT))
