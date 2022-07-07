@@ -89,6 +89,7 @@ class Forca:
         self.__letrasAchadas = []
         self.__letrasDigitadas = []
         self.__descobriuPalavra = False
+        self.__qntErros = 0
         self.__palavra = input("Digite a palavra a ser descoberta: ")
         self.__dica = input("Digite a dica da palavra: ")
 
