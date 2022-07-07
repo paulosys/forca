@@ -7,6 +7,7 @@ jogoComecou = False
 jogadores = {}
 mutex_letra = threading.Semaphore(1)  # semaforo do tipo mutex
 podeJogar = False
+letra = ''
 
 quant_jogadores = int(input("Digite a quantidade de jogadores: "))
 jogadores_conectados = 0
